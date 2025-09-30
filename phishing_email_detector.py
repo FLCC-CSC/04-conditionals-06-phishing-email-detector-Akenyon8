@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Austin Kenyon
+# DATE: 09/30/2025
+# BRIEF DESCRIPTION:  Detecting phishing emails using if elif and else functions triggered using keywords or phrases.
 
 
 
@@ -14,7 +14,20 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-
+phrase = input("Enter the email subject line: ")
+phrase = phrase.lower()
+print()
+print("SECURITY ASSESSMENT:")
+if "urgent" in phrase or "immediate action required" in phrase:
+    print("HIGH RISK: Possible phishing attempt.")
+elif "win" in phrase or "free" in phrase:
+    print("MEDIUM RISK: Suspicious offer detected.")
+elif "password reset" in phrase:
+    print("LOW RISK: Verify legitimacy with sender.")
+else:
+    print("No phishing indicators detected.")
+print("------------------------")
+print(f'Analyzed subject: "{phrase}"')   
 
 
 
@@ -78,7 +91,7 @@ Analyzed subject: "Did you request a password reset?"
 
 1. Was using `in` difficult or was it natural?
 
-
+It felt natural because its almost like typing an actual sentence.
 
 
 
